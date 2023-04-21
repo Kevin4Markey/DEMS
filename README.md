@@ -6,27 +6,15 @@ Description
 
 This application serves as a tool for businesses that need immediate data logs to be quickly saved and accessed -- dramatically improving efficiency within field diagnostic analytics -- additionally streamlining accurate data logs that are compiler compliant. The application can quickly be accessed from any terminal, making it ideal for field technicians.
 
-Setup
+Why use DEMS?
 
-Curses is an ancient UNIX library that creates a TUI (Text-Based User Interface)
+It is very secure - most linux systems and MacOS systems are inherently secure - in addition DragonScribe requires zero network connectivity.
 
-At some point in time Curses was and probably still is proprietary
+It is incredibly fast - there is no loading - there is no GUI for the processor to render - this makes for a very fast and responsive Application.
 
-To combat this totalitarian ideology, Ncurses was created
+Portability - works on most if not all systems including Windows if you are using the Windows Subsystem for Linux (an official Windows version is currently being developed -- stay tuned!).
 
-The programers rejoiced, and many TUI programs were created throughout the 80s and 90s -- So cool right?
-
-All jokes aside - Why use a TUI?
-
-It is very secure - most linux systems and MacOS systems are inherently secure - in addition DragonScribe requires zero network connectivity
-
-Incredibly fast - there is no loading - no cookies - there is no GUI for the processor to render - this makes for an incredibly fast and responsive Application
-
-Portability - works on most if not all systems including Windows if you are using the Windows Subsystem for Linux (an official Windows version is currently being developed -- stay tuned!)
-
-Program Initialization
-
-Setting up the software
+Setting up the software:
 
 1.) Firstly you must copy the code
 
