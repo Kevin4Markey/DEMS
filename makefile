@@ -2,10 +2,10 @@ CC = gcc
 CFLAGS = -Wall -Wextra -std=c99
 LDFLAGS = -lncurses
 
-all: my_program
+all: datalog
 
-my_program: my_program.c
-	$(CC) $(CFLAGS) -o my_program my_program.c $(LDFLAGS)
+datalog: datalog.c
+	$(CC) $(CFLAGS) -o datalog datalog.c $(LDFLAGS)
 
 clean:
-	rm -f my_program
+	rm -f datalog
