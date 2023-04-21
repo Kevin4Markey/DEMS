@@ -152,8 +152,8 @@ printw("************************************************************************
    
   
   
-        time_t current_time;
-   struct tm *time_info;
+      //  time_t current_time;
+   //struct tm *time_info;
    char time_string[9]; // buffer to hold formatted time string
   
    time(&current_time); // get the current time
