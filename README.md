@@ -50,13 +50,13 @@ In order to build and run the program, you must create a directoy - mkdir log
 
 This will create a directory call log - cd log
 
-This will move you inot the log directory 
+This will move you into the log directory 
 
 create three files in this directory - vi input.txt - vi log.c - vi makefile
 
 when you ls - your director contents should look somthing like this:
 
-input.txt   log.c   makefile
+input.txt  -- log.c  -- makefile (dashes will not appear in Unix - this is for readability)
 
 Now run the makefile by typing the command - make
 
@@ -64,6 +64,6 @@ This will build the binaries for you so that you don't have to compile and link 
 
 When you ls you should now see these contents:
 
-log   input.txt   log.c   makefile
+log  -- input.txt --  log.c --  makefile (dashes will not appear in Unix - this is for readability)
 
 Type ./log to launch the program
