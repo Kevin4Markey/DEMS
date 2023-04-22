@@ -1,7 +1,6 @@
 # DLMS
 
 #######################
-
 Data Log Management System  
 #######################
 
