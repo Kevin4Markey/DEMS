@@ -1,12 +1,12 @@
-# DEMS
-Data Entry Management System      
+# DLMS
+Data Log Management System      
 ########################
 
 Description
 
-This application serves as a tool for businesses that need immediate data logs to be quickly saved and accessed -- dramatically improving efficiency within field diagnostic, troubleshoting, and client analytics -- additionally streamlining accurate data logs that are compiler compliant. The application can quickly be accessed from any terminal, making it ideal for field technicians.
+This application serves as a tool for businesses that need immediate data logs to be quickly saved and accessed -- dramatically improving efficiency within field diagnostics, troubleshoting, and client-side analytics -- additionally streamlining accurate data logs that are compiler compliant. The application can quickly be accessed from any terminal, making it ideal for field technicians.
 
-Why use DEMS?
+Why use DLMS?
 
 It is very secure - most linux systems and MacOS systems are inherently secure - in addition DEMS requires zero network connectivity.
 
