@@ -3,7 +3,6 @@
 #######################
 
 Data Log Management System  
-
 #######################
 
 Description
