@@ -12,7 +12,7 @@ It is very secure - most linux systems and MacOS systems are inherently secure -
 
 DEMS is incredibly fast - there is no loading - there is no GUI for the processor to render - this makes for a very fast and responsive application.
 
-Portability - works on most if not all systems including Windows if you are using the Windows Subsystem for Linux (an official Windows version is currently being developed -- stay tuned!).
+Portability - works on most if not all systems including Windows if you are using the Windows Subsystem for Linux (an official Windows version is currently being developed).
 
 Setting up the software:
 
