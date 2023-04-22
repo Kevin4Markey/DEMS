@@ -8,7 +8,7 @@ This application serves as a tool for businesses that need immediate data logs t
 
 Why use DLMS?
 
-It is very secure - most Linux systems and macOS systems are inherently secure - in addition DEMS requires zero network connectivity.
+It is very secure - most Linux systems and macOS systems are inherently secure - in addition DLMS requires zero network connectivity.
 
 DLMS is incredibly fast, with no loading or GUI for the processor to render. This makes for a very fast and responsive application.
 
