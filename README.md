@@ -4,7 +4,7 @@
 
 Description
 
-This application serves as a tool for businesses that need immediate data logs to be quickly saved and accessed.  Dramatically improving efficiency within field diagnostics, troubleshooting, and client-side analytics - additionally streamlining accurate data logs that are compliant with any C compiler. The application can quickly be accessed from any terminal window, making it ideal for field technicians.
+This application serves as a tool for businesses that need immediate data logs to be quickly saved and accessed.  Improving efficiency within field diagnostics, troubleshooting, and client-side analytics - additionally streamlining accurate data logs that are compliant with any C compiler. The application can quickly be accessed from any terminal window, making it ideal for field technicians.
 
 Why use DLMS?
 
