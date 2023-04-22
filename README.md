@@ -14,7 +14,9 @@ DLMS is incredibly fast - there is no loading - there is no GUI for the processo
 
 Portability - works on most if not all systems including Windows if you are using the Windows Subsystem for Linux (an official Windows version is currently being developed).
 
+
 Setting up the software:
+
 
 1.) Copy the code
 
@@ -40,7 +42,9 @@ vi input.txt
 
 (to exit vi) [esc] :q!
 
-*USING THE MAKEFILE*
+
+USING THE MAKEFILE:
+
 
 In order to build and run the program, you must create a directoy - mkdir log
 
