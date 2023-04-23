@@ -62,7 +62,7 @@ Now run the makefile by typing the command - make
 
 This will build the executable files for you so that you don't have to compile and link the required libraries
 
-Type: ls, you should now see these contents:
+Type: ls, you should now see these contents:  
 
 log, input.txt, log.c, makefile 
 
