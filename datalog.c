@@ -1,4 +1,4 @@
-	 #include <ncurses.h>
+#include <ncurses.h>
          #include <stdio.h>
          #include <stdlib.h>
          #include <string.h>
@@ -26,11 +26,16 @@
          attron(COLOR_PAIR(4));												
          printw("****************************************************************************************************************\n");
          printw("* Data Entry Management Software - DEMS_v1.0 COPYRIGHT © 2023 MARKEYSOFT - ALL RIGHTS RESERVED.  {Type: help}  *\n");
-         printw("* You must enable write permisions for this program to work.   <Visit: https://github.com/Kevin4Markey/DEMS>   *\n");
+         printw("* You must enable write permissions for this program to work.  <Visit: https://github.com/Kevin4Markey/DEMS>   *\n");
          printw("****************************************************************************************************************\n");   
-         attron(COLOR_PAIR(4));													    
-         printw("\n              ***Disclaimer*** This software has omitted features -<DragonScribe>- ver_0_0_1\n");    
-   														 
+         attron(COLOR_PAIR(4));																				    
+	 printw("\n");
+	 printw("\n");
+	 printw("\n");
+	 printw("\n");   
+																			  								     
+  	 printw("\n ***Disclaimer*** This software is still under development. As such, the software is provided 'as is', without\n warranty of any kind, and I cannot be held responsible for any damages or losses that may arise from its use.\n By using the software, you acknowledge that you understand and accept these terms.\n");    
+																											   														 
 	 attroff(COLOR_PAIR(4));
     
          attron(COLOR_PAIR(1));
@@ -78,26 +83,26 @@
 																					
 																			
 																					
-	printw("Program Initialization:                                                                                        *\n");								
+	printw("Program Initialization:                                                                                        *\n");											
 	printw("****************************************************************************************************************\n"); 
         printw("\n");    
-    
-	printw("This software creates a .txt file automatically to save all log entries for you.\n");
+   											 
+	printw("This software creates an input.txt file automatically to save all log entries.\n");
         printw("\n");    
-	printw("Your system may not be so agreeable to this.\n");
+	printw("An input.txt file is required for this program to run.\n");
         printw("\n");    
 	printw("Some systems may not allow this program to create the .txt file by default.\n");    
     
 						
 	printw("To create the file: Type vi input.txt into the terminal.\n");
         printw("\n");    	
-	printw("Type these commands into the terminal to enable Write Permissions - Bash Commands:\n");
-        printw("\n");   
+	printw("Type these commands into the terminal to enable Write Permissions - Bash Commands: \n");
+        printw("\n");   									
 	printw("chmod ug+w input.txt  \n");
         printw("\n");
 	printw("chmod a+w input.txt  \n");
         printw("\n");   
-	printw("(View File) - Bash Command:\n");
+	printw("(View File) - Bash Command: \n");
         printw("\n");   
 	printw("vi input.txt\n");
         printw("\n");
@@ -360,3 +365,4 @@
         endwin();
         return 0;
         }   
+
