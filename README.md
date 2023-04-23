@@ -1,7 +1,7 @@
 # DEMS
 
 *Data Entry Management Software*  
-
+ 
 Description
 
 This application serves as a tool for businesses and individuals that need immediate data logs to be quickly saved and accessed.  Improving efficiency within field diagnostics, troubleshooting, and client-side analytics. The application can quickly be accessed from any terminal window, making it ideal for technicians.
