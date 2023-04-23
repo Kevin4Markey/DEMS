@@ -1,59 +1,59 @@
-         #include <ncurses.h>
+#include <ncurses.h>
          #include <stdio.h>
          #include <stdlib.h>
          #include <string.h>
          #include <time.h>
          #define MAX_INPUT_LEN 80000
          int main() {
-
-         initscr();
-
-         int rows = 10;
-         int cols = 20;
+         
+	 initscr();
+         
+	 int rows = 10; 
+         int cols = 20; 
          int start_row = 0;
          int start_col = 0;
-
+    
 
          start_color();
          init_pair(1, COLOR_RED, COLOR_BLACK); // for red text on black background
          init_pair(2, COLOR_YELLOW, COLOR_BLACK); // for green text on black background
-         init_color(COLOR_YELLOW, 1000, 400, 0);
-         init_pair(3, COLOR_RED|COLOR_YELLOW, COLOR_BLACK);
-         init_pair(4, COLOR_GREEN, COLOR_BLACK); // for green text on black background
+         init_color(COLOR_YELLOW, 1000, 400, 0); 
+         init_pair(3, COLOR_RED|COLOR_YELLOW, COLOR_BLACK);    
+  	 init_pair(4, COLOR_GREEN, COLOR_BLACK); // for green text on black background
          // define more color pairs if needed
          WINDOW *win = newwin(rows, cols, start_row, start_col);
          box(win,2,2); // create border around the main window
-         attron(COLOR_PAIR(4));
-         printw("*****************************************************************************************************************\n");
-         printw("* Welcome to the Data Log Management System                              --<type help to access the menu>--     *\n");
-         printw("* You must enable write permisions for this program to work         Visit: https://github.com/Kevin4Markey/DLMS *\n");
-         printw("*****************************************************************************************************************\n");
-         attron(COLOR_PAIR(4));
-         printw("\n              ***Disclaimer*** This software has omitted features -<DragonScribe>- ver_0_0_1\n");
-
-         attroff(COLOR_PAIR(4));
-
+         attron(COLOR_PAIR(4));												
+         printw("****************************************************************************************************************\n");
+         printw("* Data Entry Management Software - DEMS_v1.0 COPYRIGHT © 2023 MARKEYSOFT - ALL RIGHTS RESERVED.  {Type: help}  *\n");
+         printw("* You must enable write permisions for this program to work.   <Visit: https://github.com/Kevin4Markey/DEMS>   *\n");
+         printw("****************************************************************************************************************\n");   
+         attron(COLOR_PAIR(4));													    
+         printw("\n              ***Disclaimer*** This software has omitted features -<DragonScribe>- ver_0_0_1\n");    
+   														 
+	 attroff(COLOR_PAIR(4));
+    
          attron(COLOR_PAIR(1));
-         printw("\nPress any key to start the terminal log...");
-         attroff(COLOR_PAIR(1));
+         printw("\nPress any key to start the terminal log...");    
+         attroff(COLOR_PAIR(1));    
          getch();
          // printw("press any key to start the terminal log");       
-
-
-         tag:
+    
+ 
+	 tag:
          printw("\n");
-         attron(COLOR_PAIR(1));
-         printw("\nPress any key to initialize cursor...");
-         attroff(COLOR_PAIR(1));
-
+ 	 attron(COLOR_PAIR(1));
+  	 printw("\nPress any key to initialize cursor...");    
+         attroff(COLOR_PAIR(1));    
+ 
          refresh();
-
-         printw("\n");
+    
+         printw("\n");    
          attroff(COLOR_PAIR(3));
          printw("\n");
          printw("\n");
          printw("\n");
-
+    
          // printw("\n");
          attron(COLOR_PAIR(2));
            printw("        MM           MM                                       SSSSSSSSSS                             \n");
@@ -65,59 +65,60 @@
            printw("        MM           MM  AA  A   RR    KK K    EEEE     YY    SS      SS  OO   O  FFFF    TT         \n");
            printw("        MM           MM  AAAAAA  RR    KK  KK  EEEEEE  YY     SSSSSSSSSS  OOOOOO  FF      TTT        \n");
          attroff(COLOR_PAIR(2));
-                printw("\n");
-                printw("\n");
-                printw("\n");
+                printw("\n");    
+                printw("\n");   
+                printw("\n"); 
          attron(COLOR_PAIR(4));
          // printw("--markeysoft.com--\n");
-         printw("*****************************************************************************************************************\n");
+         printw("****************************************************************************************************************\n");
+																			
+																		
+																								
+																				
+																					
+																			
+																					
+	printw("Program Initialization:                                                                                        *\n");								
+	printw("****************************************************************************************************************\n"); 
+        printw("\n");    
+    
+	printw("This software creates a .txt file automatically to save all log entries for you.\n");
+        printw("\n");    
+	printw("Your system may not be so agreeable to this.\n");
+        printw("\n");    
+	printw("Some systems may not allow this program to create the .txt file by default.\n");    
+    
+						
+	printw("To create the file: Type vi input.txt into the terminal.\n");
+        printw("\n");    	
+	printw("Type these commands into the terminal to enable Write Permissions - Bash Commands:\n");
+        printw("\n");   
+	printw("chmod ug+w input.txt  \n");
+        printw("\n");
+	printw("chmod a+w input.txt  \n");
+        printw("\n");   
+	printw("(View File) - Bash Command:\n");
+        printw("\n");   
+	printw("vi input.txt\n");
+        printw("\n");
+	printw("(to exit vi) [esc] :q!\n");
 
-
-
-
-
-
-        printw("Program Initialization:\n");
-        printw("*****************************************************************************************************************\n");
-        printw("\n");
-
-        printw("This software creates a .txt file automatically to save all log entries for you.\n");
-        printw("\n");
-        printw("Your system may not be so agreeable to this.\n");
-        printw("\n");
-        printw("Some systems may not allow this program to create the .txt file by default.\n");
-
-
-        printw("To create the file: Type vi input.txt into the terminal.\n");
-        printw("\n");
-        printw("Type these commands into the terminal to enable Write Permissions - Bash Commands:\n");
-        printw("\n");
-        printw("chmod ug+w input.txt\n");
-        printw("\n");
-        printw("chmod a+w input.txt\n");
-        printw("\n");
-        printw("View File - Bash Command:\n");
-        printw("\n");
-        printw("vi input.txt\n");
-        printw("\n");
-        printw("(to exit vi) [esc] :q!\n");
-
-        printw("\n         ");
-        printw("\n");
-        printw("\n");
-        printw("\n");
-        //printw("**************************************************************\n");
+	printw("\n         "); 
+	printw("\n");
+	printw("\n");
+	printw("\n");
+	//printw("**************************************************************\n");
         attroff(COLOR_PAIR(4));
         getch();
         char input[MAX_INPUT_LEN];
-        int y = 11;
+        int y = 11; 
         // Create a new window for the help menu
-        int help_rows = 10;
-        int help_cols = 70;
+        int help_rows = 10; 
+        int help_cols = 70; 
         int help_start_row = (LINES - help_rows) / 5;
         int help_start_col = (COLS - help_cols) / 5;
         WINDOW *help_win = newwin(help_rows, help_cols, help_start_row, help_start_col);
-        box(help_win, 0, 1);
+        box(help_win, 0, 1); 
         wattron(help_win, COLOR_PAIR(2));
         mvwprintw(help_win, 1, 2, "Help Menu:");
         mvwprintw(help_win, 2, 2, "# Type quit to close the terminal");
@@ -127,111 +128,90 @@
         mvwprintw(help_win, 6, 2, "# All log entries will be saved to this file by default");
         wattroff(help_win, COLOR_PAIR(2));
         // Create a new window for displaying the file contents
-        int file_rows = LINES - 10;
-        int file_cols = COLS - 20;
-        int file_start_row = 10;
-        int file_start_col = 20;
-        WINDOW *file_win = newwin(file_rows, file_cols, file_start_row, file_start_col);
-        scrollok(file_win, true);
+     	int file_rows = LINES - 10; 
+     	int file_cols = COLS - 20; 
+     	int file_start_row = 10; 
+     	int file_start_col = 20; 
+     	WINDOW *file_win = newwin(file_rows, file_cols, file_start_row, file_start_col);
+    	scrollok(file_win, true);
         // Create a new window for displaying the output
-        int output_rows = LINES - 10;
-        int output_cols = COLS - 20;
-        int output_start_row = 10;
-        int output_start_col = 20;
+        int output_rows = LINES - 10; 
+        int output_cols = COLS - 20; 
+        int output_start_row = 10; 
+        int output_start_col = 20; 
         WINDOW *output_win = newwin(output_rows, output_cols, output_start_row, output_start_col);
         scrollok(output_win, true);
-        // printw("Welcome to the Terminal! --type help to access the menu--\n");  
-
-
+      	// printw("Welcome to the Terminal! --type help to access the menu--\n");  
+        
+        
         time_t current_time;
         struct tm *time_info;
-
-
+   
+   
         while (true) {
         time(&current_time);
         time_info = localtime(&current_time);
         attron(COLOR_PAIR(4));
         //mvprintw(1, 0, "[%02d:%02d:%02d] Log entry input: ", time_info->tm_hour, time_info->tm_min, time_info->tm_sec);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         //     time_t current_time;
         // struct tm *time_info;
         char time_string[9]; // buffer to hold formatted time string
-
-        time(&current_time); // get the current time
-        time_info = localtime(&current_time); // convert to local time
-
-        strftime(time_string, sizeof(time_string), "%H:%M:%S", time_info); // format time as "HH:MM:SS"
-
-        printw("Current time is %s-----------------------------------------------------------------------------------------", time_string); // display the formatted time
-
-
-
-
-
-
-
-
-
+  
+   	time(&current_time); // get the current time
+   	time_info = localtime(&current_time); // convert to local time
+  
+   	strftime(time_string, sizeof(time_string), "%H:%M:%S", time_info); // format time as "HH:MM:SS"
+  									
+   	printw("Current time is %s----------------------------------------------------------------------------------------", time_string); // display the formatted time
+ 	 			 			
+  	 					 																
+ 	    				 
+              
+                  
+                                                                             
+              
+                
+          
         attroff(COLOR_PAIR(4));
         //strftime(timestamp, sizeof(timestamp), "[%Y-%m-%d %H:%M:%S]", localtime(&current_time));
         attron(COLOR_PAIR(4));
         mvprintw(6, 0, "\n[%02d:%02d:%02d] Log entry input:  ", time_info->tm_hour, time_info->tm_min, time_info->tm_sec);
         attroff(COLOR_PAIR(4));
         refresh();
-
+        
         // time_t current_time;
         // char timestamp[20];
         // current_time = time(NULL);
         // strftime(timestamp, sizeof(timestamp), "[%Y-%m-%d %H:%M:%S]", localtime(&current_time));
         // mvprintw(1, 0, "\n\nLog entry input %s: ", timestamp);
-
-
+        
+         
         getstr(input);
         wattron(help_win, COLOR_PAIR(3));
         if (strcmp(input, "menu") == 0) {
-
-
-
-
-
-
         // Jump to the label using goto statement
         goto tag;
-        } else if (strcmp(input, "display") == 0) {
-
+	} else if (strcmp(input, "display") == 0) {
+    
         wattroff(help_win, COLOR_PAIR(3));
         // clear the file window
         werase(file_win);
         // print the log entries to the file window
-
+        
         FILE *f = fopen("input.txt", "r");
         if (f != NULL) {
         char line[MAX_INPUT_LEN];
         while (fgets(line, sizeof(line), f)) {
         wprintw(file_win, "%s",line);
         // strftime(timestamp, sizeof(timestamp), "[%Y-%m-%d %H:%M:%S]", localtime(&current_time));
-        }
-
+        }   
+        
         fclose(f);
         } else {
         wprintw(file_win, "Error: Failed to open file.");
-        }
-
-
+        }    
+        
+        
         // refresh the file window
         wrefresh(file_win);
         // wait for user input before clearing the file window
@@ -242,14 +222,14 @@
         getch();
         werase(file_win);
         wrefresh(file_win);
-        }
+        }   
         if (strcmp(input, "quit") == 0) {
         break; // exit the loop
-        }
+        }   
         //  
         FILE *fptr;
         char c;
-
+  
         // Open the file in read mode
         attron(COLOR_PAIR(3));
         fptr = fopen("input.txt", "r");
@@ -258,19 +238,19 @@
         if (fptr == NULL) {
         printf("Error opening the file.");
         return 1;
-        }
+        }   
         // Read and print the contents of the file
         while ((c = fgetc(fptr)) != EOF) {
         attron(COLOR_PAIR(3));
-
-
-
-
-
+  
+  
+  
+  
+  
         printf("%c",c);
         attroff(COLOR_PAIR(3));
-        }
-
+        }   
+  
         // Close the file
         fclose(fptr);
         move(4,0);
@@ -282,10 +262,10 @@
         } else if (strcmp(input, "help") == 0) {
         // Display the help menu
         wclear(help_win);
-        box(help_win, 0, 0);
+        box(help_win, 0, 0); 
         wattron(help_win, COLOR_PAIR(1));
         mvwprintw(help_win, 1, 2, "                           Help Menu:");
-
+        
         mvwprintw(help_win, 2, 2,"");
         mvwprintw(help_win, 3, 2, "# Type: menu, for main menu");
         mvwprintw(help_win, 4, 2, "# Type: quit, to close the terminal");
@@ -295,54 +275,54 @@
         wrefresh(help_win);
         wattroff(help_win, COLOR_PAIR(1));
         } else {
-
+ 											 
         // Write the input to a file
         FILE *fp = fopen("input.txt", "a");
-
-
+  
+  
         time_t now = time(NULL);
         struct tm *t = localtime(&now);
         char buffer[80];
-        strftime(buffer, 80, "%Y-%m-%d", t);
+        strftime(buffer, 80, "%Y-%m-%d", t); 
         // printf("Today's date is %s\n", buffer);
-
-
+  
+         
         fprintf(fp, "/*[%02d:%0d:%02d]--%s*/ %s\n",time_info->tm_hour, time_info->tm_min, time_info->tm_sec ,buffer ,input);
-
-
-
-
+        
+          
+          
+        
         //printw("\n*****************************************************************************************************************"); 
-
-
-
-
+         
+           
+           
+          
         fclose(fp);
-
+  
         wattron(help_win, COLOR_PAIR(4));
         mvwprintw(output_win, y, 0, "[%02d:%0d:%02d] Generated output:  %s",time_info->tm_hour, time_info->tm_min, time_info->tm_sec ,input);
-
+										
         wattron(help_win, COLOR_PAIR(4));
         y += 0;
         wrefresh(output_win);
-        }
+        }   
         refresh();
         getch();
-
+ 
 
         attron(COLOR_PAIR(4));
-
-
+         
+         
            printw("*****************************************************************************************************************\n");
-           printw("* Welcome to the Data Log Management System                              --<type help to access the menu>--     *\n");
-           printw("* You must enable write permisions for this program to work         Visit: https://github.com/Kevin4Markey/DLMS *\n");
+           printw("* Data Entry Management Software - DEMS_v1.0 COPYRIGHT © 2023 MARKEYSOFT - ALL RIGHTS RESERVED.   {Type: help}  *\n");
+           printw("* You must enable write permisions for this program to work     <Visit: https://github.com/Kevin4Markey/DEMS>   *\n");
            printw("*****************************************************************************************************************\n");
-           printw("\n");
-
-
-
-
-
+           printw("\n");    
+         
+          
+           
+            
+            
         attroff(COLOR_PAIR(4));
         printw("\n");
         printw("\n");
@@ -353,46 +333,30 @@
         printw("\n");
         printw("\n");
 
-
-
-
-
-
-
-
-
-
-
-
-
-          printw(" DDDDDDDD    LL         MM       MM   SSSSSSSSS\n");
-          printw(" DD     DD   LL         MM M   M MM   SS     SS\n");
-          printw(" DD     DD   LL         MM  M M  MM   SS\n");
-          printw(" DD     DD   LL         MM   M   MM   SSSSSSSSS\n");
-          printw(" DD     DD   LL         MM       MM   SSSSSSSSS\n");
-          printw(" DD     DD   LL         MM       MM          SS\n");
-          printw(" DD     DD   LL         MM       MM   SS     SS\n");
-          printw(" DDDDDDDD    LLLLLLLLL  MM       MM   SSSSSSSSS\n");
-
-        attroff(COLOR_PAIR(3));
+    
+          printw(" DDDDDDDD    EEEEEEEEE  MMM     MMM   SSSSSSSSS\n");
+          printw(" DDDDDDDDD   EEEEEEEEE  MMMM   MMMM   SSSSSSS S\n");
+          printw(" DD     DD   EE         MMMMM MMMMM   SS\n");
+          printw(" DD     DD   EE         MM  MMM  MM   SSSSSSSSS\n");
+          printw(" DD     DD   EEEEEE     MM   M   MM   SSSSSSSSS\n");
+          printw(" DD     DD   EE         MM       MM          SS\n");
+          printw(" DDDDDDDDD   EEEEEEEE   MM       MM   SS     SS\n");
+          printw(" DDDDDDDD    EEEEEEEEE  MM       MM   SSSSSSSSS\n");
+    
+   	attroff(COLOR_PAIR(3));
         printw("\n");
         attron(COLOR_PAIR(4));
-        printw("\n");
+        printw("\n");    
         printw("*****************************************************************************************************************\n");
-        // printw("\n");
-
-        printw("[https://www.markeysoft.com]                                                                                    *\n");
-
-        printw("*****************************************************************************************************************\n");
+ 	// printw("\n");
+    
+ 	printw("[https://www.markeysoft.com]                                                                                    *\n");
+ 																	
+ 	printw("*****************************************************************************************************************\n");
 
         attroff(COLOR_PAIR(4));
-        }
-
+        }   
+  
         endwin();
         return 0;
-        }
-
-
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
+        }   
