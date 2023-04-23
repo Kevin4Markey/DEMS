@@ -1,6 +1,6 @@
 # DEMS
 
-*Data Entry Management System*  
+*Data Entry Management Software*  
 
 Description
 
