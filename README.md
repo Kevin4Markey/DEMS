@@ -30,6 +30,10 @@ Setting up the software:
 
 (if ncurses lib is not installed -- Linux: sudo apt install ncurses | MacOS - brew install ncurses)
 
+How to install Homebrew if you do not already have it installed: 
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+
 Initializing Write Permissions - Bash Commands
 
 chmod ug+w input.txt
