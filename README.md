@@ -52,7 +52,7 @@ USING THE MAKEFILE:
 
 In order to build and run the program, you must create a directory - mkdir log
 
-This will create a directory call log - cd log
+This will create a directory called log - cd log
 
 This will move you into the log directory 
 
